@@ -6,5 +6,4 @@ def estimator(data):
   factor = data["timeToElapse"]//3
   impact["infectionsByRequestedTime"] = impact["currentlyInfected"]*(2**factor)
   severeImpact["infectionsByRequestedTime"]= severeImpact["currentlyInfected"]*(2**factor)
-  print(data)
   return {"data":data,"impact":impact,"severeImpact":severeImpact}
